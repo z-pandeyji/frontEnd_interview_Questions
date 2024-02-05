@@ -16,6 +16,10 @@ function undefinedToNull(obj) {
       }
       // Object.keys creates an array of all the property names(key) of the Param(Obj),
       // reduce() function used to transform the object.
+      //acc[key] = obj[key] === undefined ? null : undefinedToNull(obj[key]);: For each key in the object:
+      // If the value of this key in obj is undefined (obj[key] === undefined), set the value of this key in the accumulator object acc to null.
+      // If it's not undefined, apply the function undefinedToNull() to this value and set the result as the new value for this key in acc.
+      // return acc;: After processing all keys, return the accumulator object acc. This is your new object with undefined values replaced with null.
      return Object.keys(obj).reduce((acc, key) => {
           acc[key] = obj[key] === undefined ? null : undefinedToNull(obj[key]);
           return acc;
