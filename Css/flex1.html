@@ -1,0 +1,32 @@
+<!--Question: fill out to width:100px, but stretch to fill the available space and shrink if not enough -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex1</title>
+</head>
+<style>
+    .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.item {
+  background-color: #7aa4f0;
+  height: 50px;
+  margin: 5px;
+  flex-grow: 1;
+  flex-basis: 1;
+  width: 100px;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+</body>
+</html>
