@@ -50,9 +50,24 @@ Description: const arr = [10, 2, 2 , 1, 0, 0, 10]
 findSingle(arr) // 1
 
 Solution: Check the findSingleNonRepeatNumberInArray.js in javascript folder.
+
+### Question 6: Please create a function count(), when called it should return how many times it has been called, count.reset() should also implemented.
+
+Description: 
+count() // 1
+count() // 2
+count() // 3
+
+count.reset()
+
+count() // 1
+count() // 2
+count() // 3
+
+Solution: Check the CountFunction.js in javascript folder.
 ...
 
-Total JavaScript Questions Solved: 6
+Total JavaScript Questions Solved: 7
 
 ## CSS Questions
 
