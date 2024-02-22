@@ -67,7 +67,7 @@ count() // 3
 Solution: Check the CountFunction.js in javascript folder.
 ...
 
-Total JavaScript Questions Solved: 7
+Total JavaScript Questions Solved: 6
 
 ## CSS Questions
 
