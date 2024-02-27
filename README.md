@@ -58,16 +58,32 @@ count() // 1
 count() // 2
 count() // 3
 
-count.reset()
+count.reset() // 0
 
 count() // 1
 count() // 2
 count() // 3
 
 Solution: Check the CountFunction.js in javascript folder.
+
+### Question 7: Please Create a function model(state, element), to bind state.value to the HTMLInputElement element.
+
+Description: 
+const input = document.createElement('input')
+const state = { value: 'John' }
+model(state, input)
+
+console.log(input.value) // 'John'
+state.value = 'Doe'
+console.log(input.value) // 'Doe'
+input.value = 'John.Doe'
+input.dispatchEvent(new Event('change'))
+console.log(state.value) // 'John.Doe'
+
+Solution: Check the twoWayBinding.js in javascript folder.
 ...
 
-Total JavaScript Questions Solved: 6
+Total JavaScript Questions Solved: 7
 
 ## CSS Questions
 
@@ -77,7 +93,7 @@ Description: Create a container with width and height and center a div.
 
 Solution: Check the center_a_div.html in css folder. The solution is implemented using the flexbox.
 
-### Question 1: fill out to width:100px, but stretch to fill the available space and shrink if not enough, then stack them if needed
+### Question 2: fill out to width:100px, but stretch to fill the available space and shrink if not enough, then stack them if needed
 
 Description: On Changing the width the layout should be responsive.
 
