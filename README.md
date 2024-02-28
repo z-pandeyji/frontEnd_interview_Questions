@@ -95,7 +95,7 @@ counter.count // 3
 Solution: Check the CounterFunction.js in javascript folder.
 
 
-Total JavaScript Questions Solved: 7
+Total JavaScript Questions Solved: 8
 
 ## CSS Questions
 
