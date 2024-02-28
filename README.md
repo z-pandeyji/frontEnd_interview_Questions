@@ -81,7 +81,19 @@ input.dispatchEvent(new Event('change'))
 console.log(state.value) // 'John.Doe'
 
 Solution: Check the twoWayBinding.js in javascript folder.
-...
+
+### Question 8: Create an object with property count, which increments every time count is accessed, initial value is 0.
+
+Description: 
+const counter = createCounter()
+counter.count // 0, then it should increment
+counter.count // 1
+counter.count // 2
+counter.count = 100 // it cannot be altered
+counter.count // 3
+
+Solution: Check the CounterFunction.js in javascript folder.
+
 
 Total JavaScript Questions Solved: 7
 
