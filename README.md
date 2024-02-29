@@ -94,8 +94,18 @@ counter.count // 3
 
 Solution: Check the CounterFunction.js in javascript folder.
 
+### Question 9: Given a non-empty string, return the most frequently ocurring character. If there are multiple characters with same occurrance, return an array of them.
 
-Total JavaScript Questions Solved: 8
+Description: 
+count('abbccc')
+// 'c'
+count('abbcccddd')
+// ['c', 'd']
+
+Solution: Check the findOccuringString.js in javascript folder.
+
+
+Total JavaScript Questions Solved: 9
 
 ## CSS Questions
 
