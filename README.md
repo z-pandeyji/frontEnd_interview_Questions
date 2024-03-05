@@ -2,22 +2,22 @@
 
 ## JavaScript Questions
 
-### Question 1: Create a function that return a *copy* that has all undefined replaced with null.
+### Question 1: Create a function that return a _copy_ that has all undefined replaced with null.
 
 Description: One of the differences between null and undefined is how they are treated differently in JSON.stringify().
-JSON.stringify({a: null})      // '{"a":null}'
+JSON.stringify({a: null}) // '{"a":null}'
 JSON.stringify({a: undefined}) // '{}'
 
-JSON.stringify([null])         // '[null]'
-JSON.stringify([undefined])    // '[null]'
+JSON.stringify([null]) // '[null]'
+JSON.stringify([undefined]) // '[null]'
 
 Solution: Check the UndefinedToNull.js File in the javascript Folder.
 
 ### Question 2: Creating a function convert the roman number into the integer numbers & vice-versa.
 
 Description: subtractive notation is used, meaning 4 is IV rather than IIII, 9 is IX rather than VIIII. Same rule applies to 40(XL) and 900(CM) .etc.
-Symbol	I	V	X	L	C	D	M
-Value	1	5	10	50	100	500	1000
+Symbol I V X L C D M
+Value 1 5 10 50 100 500 1000
 
 Solution: Check the RomanToNumber.js & NumberToRoman.js in javascript Folder.
 
@@ -32,7 +32,7 @@ Solution: Check the arrayIntersection.js in javascript folder.
 
 ### Question 4: Compare 2 semver strings.
 
-Description: 
+Description:
 compare('12.1.0', '12.0.9')
 1, meaning first one is greater
 
@@ -53,7 +53,7 @@ Solution: Check the findSingleNonRepeatNumberInArray.js in javascript folder.
 
 ### Question 6: Please create a function count(), when called it should return how many times it has been called, count.reset() should also implemented.
 
-Description: 
+Description:
 count() // 1
 count() // 2
 count() // 3
@@ -68,7 +68,7 @@ Solution: Check the CountFunction.js in javascript folder.
 
 ### Question 7: Please Create a function model(state, element), to bind state.value to the HTMLInputElement element.
 
-Description: 
+Description:
 const input = document.createElement('input')
 const state = { value: 'John' }
 model(state, input)
@@ -84,7 +84,7 @@ Solution: Check the twoWayBinding.js in javascript folder.
 
 ### Question 8: Create an object with property count, which increments every time count is accessed, initial value is 0.
 
-Description: 
+Description:
 const counter = createCounter()
 counter.count // 0, then it should increment
 counter.count // 1
@@ -96,7 +96,7 @@ Solution: Check the CounterFunction.js in javascript folder.
 
 ### Question 9: Given a non-empty string, return the most frequently ocurring character. If there are multiple characters with same occurrance, return an array of them.
 
-Description: 
+Description:
 count('abbccc')
 // 'c'
 count('abbcccddd')
@@ -104,8 +104,21 @@ count('abbcccddd')
 
 Solution: Check the findOccuringString.js in javascript folder.
 
+### Question 10: Implement html() and render() to make below example work, without considering the rerender, so html() could just return the raw HTML string. This Video(https://www.youtube.com/watch?v=ruql541T7gc) explains it pretty well about how it works.
 
-Total JavaScript Questions Solved: 9
+Description:
+import {html, render} from 'lit-html'
+const helloTemplate = (name) => html`<div>Hello ${name}!</div>`
+
+// This renders <div>Hello Steve!</div> to the document body
+render(helloTemplate('Steve'), document.body)
+
+// This updates to <div>Hello John!</div>, but only updates the ${name} part
+render(helloTemplate('John'), document.body);
+
+Solution: Check the custom_litHtml_1.js in javascript folder.
+
+Total JavaScript Questions Solved: 10
 
 ## CSS Questions
 
